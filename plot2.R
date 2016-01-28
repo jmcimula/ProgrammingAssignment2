@@ -13,6 +13,6 @@ axis(2, yaxs = "r")
 with(rpVal, points(DateTime, Global_active_power, type = "l"))
 
 
-#File production 
+#File production plot2.png
 dev.copy(png, file = "plot2.png", width = 480, height = 480)
 dev.off()

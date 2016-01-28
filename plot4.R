@@ -31,6 +31,6 @@ with(rpVal, {plot(DateTime, Global_active_power, type = "n", xlab = "daytime", y
           }
     )
 
-#File production 
+#File production plot4.png
 dev.copy(png, file = "plot4.png", width = 480, height = 480)
 dev.off()
