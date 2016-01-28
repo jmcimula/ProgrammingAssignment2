@@ -11,3 +11,7 @@ for( i in 3:9 ){
 }
 
 hist(rpVal$Global_active_power, xlab = "Global Active Power (kilowatts)", main = "Global Active Power", col = "red", ylim = c(0, 1200))
+
+#File production 
+dev.copy(png, file = "plot1.png", width = 480, height = 480)
+dev.off()

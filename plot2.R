@@ -11,3 +11,8 @@ with(rpVal, plot(DateTime, Global_active_power, type = "n", xlab = "daytime", yl
 axis(1, at=c(as.numeric(min(rpVal$DateTime)), as.numeric(min(rpVal$DateTime))+86400, as.numeric(min(rpVal$DateTime))+2*86400), labels=c("Thu", "Fri", "Sat"))
 axis(2, yaxs = "r")
 with(rpVal, points(DateTime, Global_active_power, type = "l"))
+
+
+#File production 
+dev.copy(png, file = "plot2.png", width = 480, height = 480)
+dev.off()

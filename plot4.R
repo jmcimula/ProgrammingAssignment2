@@ -30,3 +30,7 @@ with(rpVal, {plot(DateTime, Global_active_power, type = "n", xlab = "daytime", y
           with(rpVal, points(DateTime, Global_reactive_power, type = "l"))
           }
     )
+
+#File production 
+dev.copy(png, file = "plot4.png", width = 480, height = 480)
+dev.off()
